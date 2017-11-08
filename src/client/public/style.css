@@ -1,0 +1,30 @@
+.menu {
+    text-align: center;
+}
+
+.menu ul{
+    border:solid darkblue;
+    background-color: darkblue;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    background-color: #0000ff;
+}
