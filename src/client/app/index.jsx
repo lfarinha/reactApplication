@@ -1,44 +1,24 @@
 import React from 'react';
 import {render} from 'react-dom';
+import Body from './body.jsx';
+import Navigation from './navigation.jsx'
 
 class App extends React.Component {
+  componentDidMount () {
+    console.log(this.props.children);
+  }
   render () {
-    var navStyle = {
-      'nav': 'text-align: center'
-    }
-    var ulStyle = {
-      'border':'solid darkblue',
-      'background-color': 'darkblue',
-      'list-style-type': 'none',
-      'margin': 0,
-      'padding': 0,
-      'overflow': 'hidden'
-    }
-    var liStyle = {
-          'display': 'inline'
-    }
-    var aStyle = {
-          'display': 'inline-block',
-          'color': 'white',
-          'font-weight': 'bold',
-          'font-size': 30,
-          'text-align': 'center',
-          'padding': '14px 16px',
-          'text-decoration': 'none'
-    }
     return (
       <div>
-      <nav className="menu">
-        <ul>
-          <li><a href='#'>Home</a></li>
-          <li><a href='#'>Gallery</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Contact</a></li>
-        </ul>
-      </nav>
+        <Navigation />
+          <span><p>between components</p></span>
+        <Body />
       </div>
     );
   }
 }
 
-render(<App/>, document.getElementById('app'));
+render(
+  <App/>,
+  document.getElementById('app')
+ );
