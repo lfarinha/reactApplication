@@ -10,11 +10,11 @@ class Body extends React.Component {
       'width': 600
     }
     return (
-      <div style={style}>
-      <section className="pageBody">
-        <p>this is the body of the page</p>
-      </section>
-      </div>
+        <div className="card content">
+        <section className="pageBody">
+          <p>this is the body of the page</p>
+        </section>
+        </div>
     );
   }
 }
