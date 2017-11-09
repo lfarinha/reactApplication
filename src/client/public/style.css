@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*@font-face{
+  font-family: roboto;
+  src: url(https://fonts.googleapis.com/css?family=Roboto);
+}*/
+
 body {
   background: #e2e1e0;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu {
@@ -33,7 +41,7 @@ body {
 }
 
 .menu a:hover{
-    background-color: #0000ff;
+    background-color: #A0A0A0;
 }
 
 .card {
