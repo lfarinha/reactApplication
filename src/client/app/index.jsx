@@ -1,23 +1,15 @@
 import React from 'react';
 import {render} from 'react-dom';
-import Body from './body.jsx';
-import Navigation from './navigation.jsx'
+import {Router, Route, BrowserRouter} from 'react-router-dom';
+import App from './app.jsx';
+import Gallery from './components/gallery.jsx';
 
-class App extends React.Component {
-  componentDidMount () {
-    console.log(this.props.children);
-  }
-  render () {
-    return (
-      <div>
-        <Navigation />
-        <Body />
-      </div>
-    );
-  }
-}
-
-render(
-  <App/>,
-  document.getElementById('app')
- );
+render (
+  <BrowserRouter>
+    <div>
+    <Route path="/" component={App} />
+    <Route path="/gallery" component={Gallery} />
+    </div>
+  </BrowserRouter>,
+   document.getElementById('app')
+);
