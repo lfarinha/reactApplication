@@ -1,17 +1,18 @@
 import React from 'react';
+import {Component} from 'react';
 import {render} from 'react-dom';
 
-class About extends React.Component {
+export class About extends Component {
   componentDidMount () {
     console.log("About mounted");
   }
   render () {
     return (
       <div className="card content">
-        <p>Leonardo Farinha</p>
+        <p>About component</p>
       </div>
     );
   }
 }
 
-module.exports = About;
+export default About;
