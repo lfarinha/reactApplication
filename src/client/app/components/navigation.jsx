@@ -8,7 +8,7 @@ export class Navigation extends React.Component {
   render () {
     return (
       <div>
-        <nav className="menu">
+        <nav className="menu navigationCard navigationContent">
           <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/gallery'>Gallery</a></li>
