@@ -19,5 +19,9 @@ app.get('/contact',function(req,res){
   res.sendFile(__dirname+'/src/client/index.html');
 });
 
+app.get('/login',function(req,res){
+  res.sendFile(__dirname+'/src/client/login.html');
+});
+
 
 app.listen(3000);
